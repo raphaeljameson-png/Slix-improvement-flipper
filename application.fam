@@ -1,0 +1,11 @@
+App(
+    appid="sli_writer",
+    name="SLI Writer",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="sli_writer_app",
+    requires=["gui", "dialogs", "storage", "nfc", "notification"],
+    stack_size=4096,
+    order=10,
+    fap_category="NFC",
+    fap_description="Write magic ISO15693 SLI / SLIX-L cards from a .nfc file",
+)
